@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+ul {
+    background-color: rgb(29, 3, 3);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 2px 20px rgb(59, 16, 16);
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    text-decoration: none;
+}
+li a:hover {
+    color: bisque;
+}
+.icon {
+    float: right;
+    width: 30px;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+.template {
+    margin: 90px 200px 0 200px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.img {
+    float: left;
+    margin-right: 95px;
+    box-shadow: 10px 10px 15px grey;
+    opacity: 0.7;
+}
+img:hover {
+    opacity: 1;
+}
+#About {
+    visibility: hidden;
+}
+#menu {
+    visibility: hidden;
+}
+#contact {
+    visibility: hidden;
+}
+.span {
+    font-size: 40px;
+    text-align: center;
+}
+.details {
+  word-spacing: 10px;
+  letter-spacing: 1px;
+}
+.menu {
+    margin: 0px 0;
+}
+.image {
+    float: right;
+    box-shadow: 10px 10px 11px grey;
+    opacity: 0.7;
+}
+.image:hover {
+    opacity: 1;
+}
+.menu-item  {
+   letter-spacing: 1px;
+}
+.address {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: cadetblue;
+}
+.mail {
+    color: black;
+}
+a:hover {
+    color: cornflowerblue;
+}
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 20px;
+}
+input[type=submit] {
+    display: inline-block;
+    border: none;
+    max-width: 15%;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 15px;
+    box-shadow: 0px 9px 8px grey;
+
+}
+input[type=submit]:hover {
+    opacity: 0.5;
+}
+input[type=submit]:active {
+    transform: translatey(5px);
+    box-shadow: 0 3px 5px grey;
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+.bottom {
+    color: white;
+}
+
+@media only screen and (max-width:550px) {
+   .template {
+    width: 100%;
+    margin: 10px;
+   }
+   .img {
+    position: absolute;
+    visibility: hidden;
+   }
+   .image {
+    width: 100%;
+   }
+   input[type=submit] {
+     padding-right: 120px;
+   }
+}
+@media only screen and (max-width:750px) {
+  .template {
+    width: 100%;
+    margin: 10px;
+  }
+  .img {
+    margin: 70px;
+    margin-bottom: -20px;
+    width: 70%;
+    height: 400px;
+  }
+  .details {
+    margin: 20px;
+  }
+  .image {
+    width: 60%;
+    height: 500px;
+    margin: 110px;
+    margin-top: -70px;
+
+  }
+  .menu {
+    text-align: center;
+  }
+  #contact {
+    margin-top: -40px;  
+  }
+  .footer {
+    margin: 20px;
+  }
+}
+
+
+
